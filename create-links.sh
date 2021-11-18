@@ -7,7 +7,7 @@
 cd $HOME/; rm .xinitrc
 cd $HOME/; rm .zshrc
 cd $HOME/; rm .bashrc
-cd $HOME/; rm -rf dwm-bar
+#cd $HOME/; rm -rf dwm-bar
 cd $HOME/; rm -rf Pictures
 cd $HOME/; rm -rf .oh-my-zsh
 
@@ -32,7 +32,7 @@ cd $HOME/.config; rm -rf zathura
 ln -s $HOME/dotfiles/.xinitrc $HOME/
 ln -s $HOME/dotfiles/.zshrc $HOME/
 ln -s $HOME/dotfiles/.bashrc $HOME/
-ln -s $HOME/dotfiles/dwm-bar $HOME/
+#ln -s $HOME/dotfiles/dwm-bar $HOME/
 ln -s $HOME/dotfiles/Pictures $HOME/
 ln -s $HOME/dotfiles/.oh-my-zsh $HOME/
 

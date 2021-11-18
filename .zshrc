@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/void/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 
 #export NNN_BMS='d:~/Documents;u:/home/user/Cam Uploads;D:~/Downloads/'
@@ -14,7 +14,7 @@ export ZSH="/home/void/.oh-my-zsh"
 #export LESS='-Ri '
 
 
-export PATH=$PATH:/home/void/.local/bin/
+export PATH=$PATH:$HOME/.local/bin/
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
