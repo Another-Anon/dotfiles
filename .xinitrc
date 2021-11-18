@@ -43,11 +43,7 @@ xrandr --output eDP1 --auto --right-of HDMI1 &
 
 #transmission-qt &
 
-cd $HOME/dotfiles; git pull;
-cd $HOME/dotfiles; git add .;
-cd $HOME/dotfiles; git commit -m "auto-commit";
-cd $HOME/dotfiles; git push;
-cd $HOME;
+cd $HOME/dotfiles; ./git-updater &
 
 
 
