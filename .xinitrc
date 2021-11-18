@@ -21,10 +21,10 @@ xset fp rehash &
 setxkbmap -model pc104 -layout us,ru -variant qwerty -option grp:alt_shift_toggle &
 
 
-feh --bg-fill --randomize ~/Pictures/ &
+feh --bg-fill --randomize $HOME/Pictures/ &
 
 
-picom --config /home/void/.config/picom.conf &
+picom --config $HOME/.config/picom.conf &
 dunst &
 
 
@@ -42,6 +42,14 @@ xrandr --output eDP1 --auto --right-of HDMI1 &
 
 
 #transmission-qt &
+
+cd $HOME/dotfiles; git pull;
+cd $HOME/dotfiles; git add .;
+cd $HOME/dotfiles; git commit -m "auto-commit";
+cd $HOME/dotfiles; git push;
+cd $HOME;
+
+
 
 
  exec dwm
