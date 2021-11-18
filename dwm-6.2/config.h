@@ -103,6 +103,14 @@ static const char *freetube[] = { "freetube", NULL};
 
 
 
+#define XF86AudioMute 0x1008ff12
+#define XF86AudioLowerVolume 0x1008ff11
+#define XF86AudioRaiseVolume 0x1008ff13
+#define XF86MonBrightnessDown 0x1008ff03
+#define XF86MonBrightnessUp 0x1008ff02
+
+
+
 
 
 
@@ -127,6 +135,11 @@ static Key keys[] = {
 
         { MODKEY,                       XK_F3,          spawn,                  {.v = audio_up} },
         { MODKEY,                       XK_F2,          spawn,                  {.v = audio_down} },
+
+		{ MODKEY,           XF86AudioRaiseVolume,       spawn,                  {.v = audio_up} },
+		{ MODKEY,           XF86AudioLowerVolume,       spawn,                  {.v = audio_down} },
+
+
         { MODKEY,                       XK_F7,           spawn,                  {.v = bright_up} },
         { MODKEY,                       XK_F8,           spawn,                  {.v = bright_down} },
         { 0,                            XK_Print,      spawn,     {.v = screenshot } },
