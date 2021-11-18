@@ -28,7 +28,7 @@ picom --config $HOME/.config/picom.conf &
 dunst &
 
 
-/home/void/dwm-bar/dwm_bar.sh &
+$HOME/dwm-bar/dwm_bar.sh &
 #exec slstatus &
 
 xrandr --output eDP1 --auto --right-of HDMI1 &
@@ -43,7 +43,7 @@ xrandr --output eDP1 --auto --right-of HDMI1 &
 
 #transmission-qt &
 
-cd $HOME/dotfiles; ./git-updater &
+$HOME/dotfiles/git-update.sh &
 
 
 
