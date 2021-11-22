@@ -21,7 +21,7 @@ cd $HOME/.config; rm -rf mpv
 cd $HOME/.config; rm -rf nvim
 cd $HOME/.config; rm -rf st
 cd $HOME/.config; rm -rf zathura
-
+cd $HOME/.config; rm -rf kitty
 
 #============#
 
@@ -46,3 +46,4 @@ ln -s $HOME/dotfiles/mpv $HOME/.config/
 ln -s $HOME/dotfiles/nvim $HOME/.config/
 ln -s $HOME/dotfiles/st $HOME/.config/
 ln -s $HOME/dotfiles/zathura $HOME/.config/
+ln -s $HOME/dotfiles/kitty $HOME/.config/
