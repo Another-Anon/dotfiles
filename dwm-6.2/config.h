@@ -86,8 +86,11 @@ static const char *termcmd[]  = { "st", NULL };
 
 static const char *waterfox[] = { "waterfox", NULL};
 static const char *telegram[] = { "telegram-desktop", NULL};
+static const char *telegram1[] = { "Telegram", NULL};
 static const char *discord[] = { "Discord", NULL};
 static const char *thunar[] = { "nemo", NULL, };
+static const char *thunar1[] = { "Thunar", NULL, };
+
 
 
 static const char *audio_up[] = { "pamixer", "-i", "5", NULL};
@@ -130,8 +133,12 @@ static Key keys[] = {
         { MODKEY,                       XK_v,           spawn,                  {.v = waterfox} },
 
         { MODKEY|ShiftMask,             XK_t,           spawn,                  {.v = telegram} },
+		{ MODKEY|ShiftMask,             XK_t,           spawn,                  {.v = telegram1} },
+
         { MODKEY|ShiftMask,             XK_d,           spawn,                  {.v = discord} },
         { MODKEY,                       XK_s,           spawn,                   {.v = thunar } },
+		{ MODKEY,                       XK_s,           spawn,                   {.v = thunar1 } },
+
 
         { MODKEY,                       XK_F3,          spawn,                  {.v = audio_up} },
         { MODKEY,                       XK_F2,          spawn,                  {.v = audio_down} },
