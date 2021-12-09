@@ -34,6 +34,7 @@ $HOME/dwm-bar/dwm_bar.sh &
 xrandr --output eDP1 --auto --right-of HDMI1 &
 
 dbus-launch --autolaunch=$(cat /var/lib/dbus/machine-id) &
+python /usr/local/searx/searx-src/searx/webapp.py &
 
 #while true;
 #do
