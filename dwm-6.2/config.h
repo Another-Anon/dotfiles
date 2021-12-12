@@ -91,7 +91,7 @@ static const char *discord[] = { "Discord", NULL};
 static const char *thunar[] = { "nemo", NULL, };
 static const char *thunar1[] = { "Thunar", NULL, };
 
-static const char *music[] = { "~/music.sh", NULL, };
+static const char *music[] = { "$HOME/music.sh", NULL, };
 
 static const char *audio_up[] = { "pamixer", "-i", "5", NULL};
 static const char *audio_down[] = { "pamixer", "-d", "5", NULL};
@@ -154,7 +154,7 @@ static Key keys[] = {
 
 
 
-	{ 0,						XK_F1,      spawn,     {.v = music} },
+	{ MODKEY,						XK_F1,      spawn,     {.v = music} },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_z, zoom,           {0} },
