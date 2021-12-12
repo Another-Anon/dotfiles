@@ -21,7 +21,7 @@ xset fp rehash &
 setxkbmap -model pc104 -layout us,ru -variant qwerty -option grp:alt_shift_toggle &
 
 
-feh --bg-fill --randomize $HOME/Pictures/ &
+feh --bg-fill $HOME/Pictures/1635465724241.jpg &
 
 
 picom --config $HOME/.config/picom.conf &
