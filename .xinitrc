@@ -45,7 +45,7 @@ $HOME/dwm-bar/dwm_bar.sh &
 
 #transmission-qt &
 
-$HOME/dotfiles/git-update.sh &
+#$HOME/dotfiles/git-update.sh &
 
 
 
