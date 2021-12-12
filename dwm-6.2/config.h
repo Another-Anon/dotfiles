@@ -91,7 +91,7 @@ static const char *discord[] = { "Discord", NULL};
 static const char *thunar[] = { "nemo", NULL, };
 static const char *thunar1[] = { "Thunar", NULL, };
 
-
+static const char *music[] = { "~/music.sh", NULL, };
 
 static const char *audio_up[] = { "pamixer", "-i", "5", NULL};
 static const char *audio_down[] = { "pamixer", "-d", "5", NULL};
@@ -111,7 +111,6 @@ static const char *freetube[] = { "freetube", NULL};
 #define XF86AudioRaiseVolume 0x1008ff13
 #define XF86MonBrightnessDown 0x1008ff03
 #define XF86MonBrightnessUp 0x1008ff02
-
 
 
 
@@ -155,7 +154,7 @@ static Key keys[] = {
 
 
 
-
+	{ 0,						XK_F1,      spawn,     {.v = music} },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_z, zoom,           {0} },
