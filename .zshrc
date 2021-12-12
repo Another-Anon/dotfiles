@@ -131,3 +131,5 @@ source $ZSH/oh-my-zsh.sh
 alias v='nvim'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
+alias zzz="sudo zzz"
+alias spoweroff='$HOME/dotfiles/git-update.sh && sudo poweroff'
