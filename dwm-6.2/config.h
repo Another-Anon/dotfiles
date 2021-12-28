@@ -102,7 +102,7 @@ static const char *bright_down[] = { "xbacklight", "-10", NULL};
 static const char *screenshot[] = { "flameshot", "gui", NULL};
 
 static const char *freetube[] = { "freetube", NULL};
-
+static const char *wifi[] = { "rofi-wifi-menu.sh", NULL};
 
 
 
@@ -148,14 +148,14 @@ static Key keys[] = {
 
         { MODKEY,                       XK_F7,           spawn,                  {.v = bright_up} },
         { MODKEY,                       XK_F8,           spawn,                  {.v = bright_down} },
-        { 0,                            XK_Print,      spawn,     {.v = screenshot } },
-		{ MODKEY|ShiftMask,                            XK_f,      spawn,     {.v = freetube} },
-
+        { 0,                            XK_Print,		 spawn,     {.v = screenshot } },
+		{ MODKEY|ShiftMask,             XK_f,			 spawn,     {.v = freetube} },
+		{ MODKEY,						XK_w,			 spawn,     {.v = wifi} },
 
 
 
 	{ MODKEY,						XK_F1,      spawn,     {.v = music} },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+	{ MODKEY,						XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_z, zoom,           {0} },
 	{ MODKEY|Mod4Mask,              XK_u,      incrgaps,       {.i = +1 } },
