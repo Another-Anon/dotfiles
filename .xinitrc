@@ -30,7 +30,9 @@ dunst &
 $HOME/dwm-bar/dwm_bar.sh &
 #exec slstatus &
 
-#xrandr --output eDP1 --auto --right-of HDMI1 &
+
+xrandr --output HDMI1 --auto --left-of eDP1  --auto
+xrandr --output HDMI1 --mode 1024x768 
 
 #dbus-launch --autolaunch=$(cat /var/lib/dbus/machine-id) &
 #python /usr/local/searx/searx-src/searx/webapp.py &
