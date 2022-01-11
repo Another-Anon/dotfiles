@@ -15,6 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 
 export PATH=$PATH:$HOME/.local/bin/
+export PATH=$PATH:~/.npm-global/bin/
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -129,6 +130,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Aliases
 alias v='nvim'
+alias lv='lvim'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
 alias zzz="sudo zzz"
