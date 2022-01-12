@@ -110,13 +110,10 @@ static const char *thunar1[] = {
     NULL,
 };
 
+static const char *music[] = { "/home/void/music.sh", NULL, };
 static const char *stolarov[] = {"zathura",
                                  "/home/void/Downloads/books/stolarov/1", NULL};
 
-static const char *music[] = {
-    "$HOME/music.sh",
-    NULL,
-};
 
 static const char *audio_up[] = {"pamixer", "-i", "5", NULL};
 static const char *audio_down[] = {"pamixer", "-d", "5", NULL};
@@ -166,6 +163,65 @@ static Key keys[] = {
     {MODKEY, XK_w, spawn, {.v = wifi}},
     {MODKEY | ShiftMask, XK_b, spawn, {.v = stolarov}},
 
+
+        { MODKEY,                       XK_F3,          spawn,                  {.v = audio_up} },
+        { MODKEY,                       XK_F2,          spawn,                  {.v = audio_down} },
+
+		{ MODKEY,           XF86AudioRaiseVolume,       spawn,                  {.v = audio_up} },
+		{ MODKEY,           XF86AudioLowerVolume,       spawn,                  {.v = audio_down} },
+
+
+        { MODKEY,                       XK_F7,           spawn,                  {.v = bright_up} },
+        { MODKEY,                       XK_F8,           spawn,                  {.v = bright_down} },
+        { 0,                            XK_Print,      spawn,     {.v = screenshot } },
+		{ MODKEY|ShiftMask,                            XK_f,      spawn,     {.v = freetube} },
+
+
+
+
+	{ 0,						XK_F1,      spawn,     {.v = music} },
+	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY,                       XK_z, zoom,           {0} },
+	{ MODKEY|Mod4Mask,              XK_u,      incrgaps,       {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_u,      incrgaps,       {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_i,      incrigaps,      {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_i,      incrigaps,      {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_o,      incrogaps,      {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_o,      incrogaps,      {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_6,      incrihgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_6,      incrihgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_7,      incrivgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_7,      incrivgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_8,      incrohgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_8,      incrohgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_9,      incrovgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_9,      incrovgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
+	{ MODKEY,                       XK_Tab,    view,           {0} },
+	{ MODKEY,                       XK_q,      killclient,     {0} },
+	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[13]} },
+	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_space,  setlayout,      {0} },
+	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	TAGKEYS(                        XK_1,                      0)
+	TAGKEYS(                        XK_2,                      1)
+	TAGKEYS(                        XK_3,                      2)
+	TAGKEYS(                        XK_4,                      3)
+	TAGKEYS(                        XK_5,                      4)
+	TAGKEYS(                        XK_6,                      5)
+	TAGKEYS(                        XK_7,                      6)
+	TAGKEYS(                        XK_8,                      7)
+	TAGKEYS(                        XK_9,                      8)
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
     {MODKEY, XK_F1, spawn, {.v = music}},
     {MODKEY, XK_h, setmfact, {.f = -0.05}},
     {MODKEY, XK_l, setmfact, {.f = +0.05}},
