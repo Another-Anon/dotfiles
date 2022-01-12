@@ -113,10 +113,6 @@ static const char *music[] = { "/home/void/music.sh", NULL, };
 static const char *stolarov[] = {"zathura",
                                  "/home/void/Downloads/books/stolarov/1", NULL};
 
-static const char *music[] = {
-    "$HOME/music.sh",
-    NULL,
-};
 
 static const char *audio_up[] = {"pamixer", "-i", "5", NULL};
 static const char *audio_down[] = {"pamixer", "-d", "5", NULL};
