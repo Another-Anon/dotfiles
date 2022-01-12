@@ -109,12 +109,9 @@ static const char *thunar1[] = {
     NULL,
 };
 
-<<<<<<< HEAD
 static const char *music[] = { "/home/void/music.sh", NULL, };
-=======
 static const char *stolarov[] = {"zathura",
                                  "/home/void/Downloads/books/stolarov/1", NULL};
->>>>>>> 8b3b9a9a9b5ff8f4da29825aee382ef9c3f06710
 
 static const char *music[] = {
     "$HOME/music.sh",
@@ -169,7 +166,6 @@ static Key keys[] = {
     {MODKEY, XK_w, spawn, {.v = wifi}},
     {MODKEY | ShiftMask, XK_b, spawn, {.v = stolarov}},
 
-<<<<<<< HEAD
 
         { MODKEY,                       XK_F3,          spawn,                  {.v = audio_up} },
         { MODKEY,                       XK_F2,          spawn,                  {.v = audio_down} },
@@ -229,7 +225,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-=======
     {MODKEY, XK_F1, spawn, {.v = music}},
     {MODKEY, XK_h, setmfact, {.f = -0.05}},
     {MODKEY, XK_l, setmfact, {.f = +0.05}},
@@ -266,7 +261,6 @@ static Key keys[] = {
     TAGKEYS(XK_1, 0) TAGKEYS(XK_2, 1) TAGKEYS(XK_3, 2) TAGKEYS(XK_4, 3)
         TAGKEYS(XK_5, 4) TAGKEYS(XK_6, 5) TAGKEYS(XK_7, 6) TAGKEYS(XK_8, 7)
             TAGKEYS(XK_9, 8){MODKEY | ShiftMask, XK_q, quit, {0}},
->>>>>>> 8b3b9a9a9b5ff8f4da29825aee382ef9c3f06710
 };
 
 /* button definitions */
