@@ -20,8 +20,8 @@ xset fp rehash &
 
 setxkbmap -model pc104 -layout us,ru -variant qwerty -option grp:alt_shift_toggle &
 
+feh --bg-fill  Pictures/1630705845163.jpg &
 
-feh --bg-fill ~/Downloads/1641043685490.jpg &
 
 picom --config $HOME/.config/picom.conf &
 dunst &
@@ -31,8 +31,8 @@ $HOME/dwm-bar/dwm_bar.sh &
 #exec slstatus &
 
 
-xrandr --output HDMI1 --auto --left-of eDP1  --auto
-xrandr --output HDMI1 --mode 1024x768 
+#xrandr --output HDMI1 --auto --left-of eDP1  --auto
+#xrandr --output HDMI1 --mode 1024x768 
 
 #dbus-launch --autolaunch=$(cat /var/lib/dbus/machine-id) &
 #python /usr/local/searx/searx-src/searx/webapp.py &
